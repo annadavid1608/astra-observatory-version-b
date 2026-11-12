@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090817">
+  <title>ASTRA Observatory — The sky is yours.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">✳</span><span>ASTRA<span class="brand-light">_OBSERVATORY</span></span></a>
+      <nav class="nav">
+        <a href="#conditions">[ LIVE DATA ]</a>
+        <a href="#about">[ THE MISSION ]</a>
+        <a href="#location">[ COORDINATES ]</a>
+      </nav>
+      <span class="system-status"><span class="live-dot"></span> SYSTEM ONLINE</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="live-dot"></span> ASTRA ATMOSPHERIC INTELLIGENCE / 49.2475° N</div>
+          <h1>THE SKY<br><em>IS YOURS.</em></h1>
+          <p>LIVE ATMOSPHERIC INTELLIGENCE. Erfasse die Bedingungen über Zweibrücken und plane deinen nächsten Blick ins Universum.</p>
+          <a class="hero-cta" href="#conditions">INITIATE SKY SCAN <span>↗</span></a>
+        </div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit-core">A<br>01</div>
+        <div class="hero-location">SECTOR 49°14′ N / 7°22′ E<br><strong>AMERIKASTRASSE 1 · ZWEIBRÜCKEN</strong></div>
+      </section>
+
+      <section class="live-section" id="conditions">
+        <div class="section-heading">
+          <div><div class="kicker">01 / SYSTEM STATUS — ATMOSPHERE</div><h2>LIVE SKY / DATA STREAM</h2></div>
+          <div class="update-info"><span class="live-dot"></span> <span id="api-status">CONNECTING TO API</span><small id="updated-at">Incoming data …</small></div>
+        </div>
+
+        <div class="live-grid">
+          <article class="score-card">
+            <div class="metric-label">✧ &nbsp; ASTRA SCORE // INDEX</div>
+            <div class="score-number" id="astro-score">—<small> / 100</small></div>
+            <div class="score-caption" id="score-description">Awaiting atmospheric data</div>
+            <div class="score-track"><span id="score-bar"></span></div>
+          </article>
+          <article class="metric">
+            <div class="metric-label"><span class="metric-icon">◌</span> CLOUD COVER</div>
+            <div class="metric-value" id="cloud-cover">—</div>
+            <div class="metric-note">TOTAL CLOUD COVER / %</div>
+          </article>
+          <article class="metric">
+            <div class="metric-label"><span class="metric-icon">◎</span> VISIBILITY</div>
+            <div class="metric-value" id="visibility">—</div>
+            <div class="metric-note">HORIZONTAL RANGE</div>
+          </article>
+          <article class="metric">
+            <div class="metric-label"><span class="metric-icon">℃</span> TEMPERATURE</div>
+            <div class="metric-value" id="temperature">—</div>
+            <div class="metric-note">2 M / ABOVE GROUND</div>
+          </article>
+          <article class="metric">
+            <div class="metric-label"><span class="metric-icon">↗</span> WIND VECTOR</div>
+            <div class="metric-value" id="wind-direction">—</div>
+            <div class="metric-note" id="wind-speed">WIND AT 10 M</div>
+          </article>
+        </div>
+
+        <div class="data-footer">
+          <span>DATA SOURCE: OPEN-METEO API // ZWEIBRÜCKEN</span>
+          <button class="refresh-button" id="refresh-button" type="button">↻ REFRESH DATA</button>
+        </div>
+        <p class="data-disclaimer">ASTRA SCORE = eigener Orientierungsindex auf Basis der Wetterdaten, kein offizieller astronomischer Messwert.</p>
+      </section>
+
+      <section class="story-section" id="about">
+        <div class="story-copy">
+          <div class="kicker">02 / MISSION LOG — EXPLORE THE UNKNOWN</div>
+          <h2>MISSION:<br><span>EXPLORE THE NIGHT.</span></h2>
+          <p>ASTRA übersetzt atmosphärische Echtzeitdaten in Orientierung für deine nächste Beobachtungsnacht. Analysiere Wolkendecke, Sichtweite und Wind — und finde dein nächstes Window to the universe.</p>
+          <a class="hero-cta" href="#conditions">RUN CONDITION CHECK <span>↗</span></a>
+        </div>
+        <div class="story-image" role="img" aria-label="Sternenhimmel über einer Berglandschaft"><span>FIG. 02 — DEEP SPACE</span></div>
+      </section>
+    </main>
+
+    <footer id="location">
+      <span>ASTRA OBSERVATORY // ZWEIBRÜCKEN // 2026 // Studienprojekt der Kunstschule Wandsbek, keine offizielle Seite
+</span>
+      <span>OPEN-METEO DATA FEED · END OF TRANSMISSION</span>
+    </footer>
+  </div>
+</body>
+</html>
